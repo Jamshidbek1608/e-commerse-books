@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!--font-awesom   link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css file  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>Online kitob do'koni</title>
+</head>
+
+<body>
+  <!-- header section start -->
+  <header class="header">
+    <div class="header-1">
+      <a href="#" class="logo"><i class="fas fa-book"></i> bookly</a>
+
+      <form action="" class="search-form">
+        <input type="search" placeholder="Search ..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#featured">Xususiyati</a>
+        <a href="#arrivals">qaytarish</a>
+        <a href="#review">sharhlar</a>
+        <a href="#blogs">bloglar</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /header section end -->
+
+  <!-- button navbar start-->
+  <nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#review" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blogs"></a>
+  </nav>
+  <!-- / button navbar end-->
+
+  <!-- login form -->
+  <div class="login-form-container">
+    <div class="fas fa-times" id="close-login-btn"></div>
+    <form action="">
+      <h3>sign in</h3>
+      <span>email</span>
+      <input type="text" class="box" placeholder="enter your email">
+      <span>password</span>
+      <input type="password" class="box" placeholder="enter your password">
+      <div class="checkbox">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">remember-me</label>
+      </div>
+      <input type="submit" value="sign in" class="btn">
+      <p>parolingizni unutdingizmi ? <a href="#">click here</a></p>
+      <p>accountingiz yo'qmi ? <a href="#">yangi account</a></p>
+    </form>
+
+  </div>
+  <!-- login form end -->
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="row">
+      <div class="content">
+        <h3>75% chegirmaga qadar</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, deleniti at cupiditate voluptate
+          excepturi, minus reprehenderit illum a exercitationem, id expedita facere magnam consequatur
+          voluptatem esse pariatur ex quaerat dolorum?</p>
+        <a href="#" class="btn">hoziroq sotib ol</a>
+      </div>
+
+      <div class="swiper book-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
+        </div>
+        <img src="image/stand.png" class="stand" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- /home section end -->
+  <!--  incons section start  -->
+  <section class="icons-container">
+    <div class="icons">
+      <i class="fas fa-shipping-fast"></i>
+      <div class="content">
+        <h3>yetkazib berish bepul</h3>
+        <p>buyurtma berish $100</p>
+      </div>
+    </div>
+    <div class="icons">
+      <i class="fas fa-lock"></i>
+      <div class="content">
+        <h3>xavfsiz to'lov</h3>
+        <p>100% xavfsiz</p>
+      </div>
+    </div>
+    <div class="icons">
+      <i class="fas fa-redo-alt"></i>
+      <div class="content">
+        <h3>oson qaytish</h3>
+        <p>qaytarish muddati 10 kun</p>
+      </div>
+    </div>
+    <div class="icons">
+      <i class="fas fa-headset"></i>
+      <div class="content">
+        <h3>24/7 qo'llab-quvvatlash</h3>
+        <p>hamma vaqt qo'ng'iroq qilish</p>
+      </div>
+    </div>
+  </section>
+  <!--  icons section end  -->
+  <!-- featured section start -->
+  <section class="featured" id="featured">
+    <h1 class="heading"><span>ko'rsatilgan kitoblar</span></h1>
+    <div class="swiper featured-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-1.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-1.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-2.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-3.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-4.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-5.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-6.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-7.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-8.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-9.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="image/book-10.png" alt="">
+          </div>
+          <div class="content">
+            <h3>ko'rsatilgan kitoblar</h3>
+            <div class="price">$14.99 <span>$21.99</span></div>
+            <a href="#" class="btn">savatchaga qo'shish</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </section>
+  <!-- featured section end-->
+
+  <!-- newsletters section start -->
+  <section class="newsletter">
+
+    <form action="">
+      <h3>so'nggi yangilanishlarga obuna bo'ling</h3>
+      <input type="email" name="" placeholder="Emailingizni kiriting" id="" class="box">
+      <input type="submit" value="obuna bo'lish" class="btn">
+    </form>
+  </section>
+  <!-- newsletters section end -->
+
+  <!-- section arrivals start -->
+  <section class="arrivals" id="arrivals">
+    <h1 class="heading"><span>yangi kelganlar</span></h1>
+    <div class="swiper arrivals-slider">
+
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-1.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-2.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-3.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-4.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-5.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="swiper arrivals-slider">
+
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-6.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-7.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-8.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-9.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="swiper-slide box">
+          <div class="image">
+            <img src="./image/book-10.png" alt="">
+          </div>
+          <div class="content">
+            <h3>yangi kelgani</h3>
+            <div class="price">$19.99 <span>$21.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- section arrivals end -->
+
+  <!-- deal section start -->
+  <section class="deal">
+    <div class="content">
+      <h3>kunlik kelishuv</h3>
+      <h1><span>50%</span> gacha chegirma</h1>
+      <p>Lorem ipsum dolor sit ameticia odio totam delectus possimus accusamus inventore quidem debitis aliquid
+        doloremque, quas deserunt!</p>
+      <a href="#" class="btn">hozir xarid qiling</a>
+    </div>
+    <div class="image">
+      <img src="image/deal-img.jpg" alt="">
+    </div>
+
+  </section>
+  <!-- deal section end -->
+
+  <!-- reviews section start  -->
+  <section class="reviews" id="reviews">
+    <h1 class="heading"><span>mijozning sharhlari</span></h1>
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <img src="./image/pic-1.png" alt="">
+          <h3>ali zairov</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <img src="./image/pic-2.png" alt="">
+          <h3>maftuna khojiyave</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <img src="./image/pic-3.png" alt="">
+          <h3>ali zairov</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <img src="./image/pic-4.png" alt="">
+          <h3>maftuna khojiyave</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <img src="./image/pic-5.png" alt="">
+          <h3>ali zairov</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <img src="./image/pic-6.png" alt="">
+          <h3>maftuna khojiyave</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae neque aspernatur hic, in dolorum
+            nostrum possimus illo iure, cupiditate dolore!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- reviews section end -->
+
+  <!-- blogs section stars -->
+  <section class="blogs" id="blogs">
+    <h1 class="heading"><span>blogs</span></h1>
+
+    <div class="swiper blogs-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./image/blog-1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>bu yer blog sahifasi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque ratione beatae ab temporibus totam
+              facere sapiente!</p>
+            <a href="#" class="btn">ko'proq bilish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./image/blog-2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>bu yer blog sahifasi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque ratione beatae ab temporibus totam
+              facere sapiente!</p>
+            <a href="#" class="btn">ko'proq bilish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./image/blog-3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>bu yer blog sahifasi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque ratione beatae ab temporibus totam
+              facere sapiente!</p>
+            <a href="#" class="btn">ko'proq bilish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./image/blog-4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>bu yer blog sahifasi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque ratione beatae ab temporibus totam
+              facere sapiente!</p>
+            <a href="#" class="btn">ko'proq bilish</a>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <div class="image">
+            <img src="./image/blog-5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>bu yer blog sahifasi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque ratione beatae ab temporibus totam
+              facere sapiente!</p>
+            <a href="#" class="btn">ko'proq bilish</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blogs section end -->
+<!-- footer section start -->
+<section class="footer">
+  <div class="box-container">
+
+    <div class="box">
+      <h3>bizning manzil</h3>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> india</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> usa</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> russia</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> england</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> japan</a>
+    </div>
+<!-- Home Featured Arrivals Review Blogs -->
+    <div class="box">
+      <h3>havolalarimiz</h3>
+      <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+      <a href="#featured"><i class="fas fa-arrow-right"></i> Xususiyati</a>
+      <a href="#arrivals"><i class="fas fa-arrow-right"></i> qaytarish</a>
+      <a href="#review"><i class="fas fa-arrow-right"></i> sharhlar</a>
+      <a href="#blogs"><i class="fas fa-arrow-right"></i> bloglar</a>
+    </div>
+
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+  </div>
+
+  <div class="box">
+      <h3>contact info</h3>
+      <a href="#"> <i class="fas fa-phone"></i> +998911074066 </a>
+      <a href="#"> <i class="fas fa-phone"></i> +998904069007 </a>
+      <a href="#"> <i class="fas fa-envelope"></i> abdumannonov@gmail.com </a>
+      <img src="./image/worldmap.png" class="map" alt="">
+  </div>
+  
+  </div>
+
+  <div class="share">
+    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-linkedin"></a>
+    <a href="#" class="fab fa-pinterest"></a>
+  </div>
+
+  <div class="credit">Created By <span>Mr. Web Designer</span> | All Rights Reserved!</div>
+
+  </div>
+
+</section>
+<!-- footer section end -->
+<!-- loader section -->
+<div class="loader-container">
+  
+  <div class="lds-dual-ring"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
